@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Smart Village</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Smart Village</div>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+        </div>
+    </nav>
+
+    <section class="form-section">
+
+        <div class="form-box">
+
+            <h1>Create Account</h1>
+
+            <form method="POST" action="/register">
+
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+
+                <label>Age</label>
+                <input type="number" name="age" required>
+
+                <label>Education</label>
+                <input type="text" name="education" required>
+
+                <label>Skills</label>
+                <input type="text" name="skills">
+
+                <label>Occupation</label>
+                <input type="text" name="occupation">
+
+                <label>Income Category</label>
+                <select name="income_category">
+
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+
+                </select>
+
+                <label>Employment Status</label>
+                <select name="employment_status">
+
+                    <option value="Employed">Employed</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Self-Employed">Self-Employed</option>
+                    <option value="Student">Student</option>
+
+                </select>
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+                <label>Password</label>
+                <input type="password" name="password" required>
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+            <p>
+                Already registered?
+                <a href="/login">Login</a>
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

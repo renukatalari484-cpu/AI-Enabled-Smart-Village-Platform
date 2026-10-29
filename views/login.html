@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Smart Village</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Smart Village
+        </div>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/register">Register</a>
+        </div>
+
+    </nav>
+
+    <section class="form-section">
+
+        <div class="form-box">
+
+            <h1>Smart Village Login</h1>
+
+            <p>Login to access your dashboard.</p>
+
+            <form method="POST" action="/login">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    required
+                >
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    name="password"
+                    required
+                >
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <p>
+                Don't have an account?
+                <a href="/register">Register here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

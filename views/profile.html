@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile - Smart Village</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Smart Village
+        </div>
+
+        <div>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/logout">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>👤 My Profile</h1>
+
+        <p>
+            Manage your information to receive
+            personalized recommendations.
+        </p>
+
+    </section>
+
+
+    <section class="profile-container">
+
+        <form action="/profile" method="POST">
+
+            <label>Name</label>
+            <input
+                type="text"
+                name="name"
+                required
+            >
+
+
+            <label>Phone</label>
+            <input
+                type="text"
+                name="phone"
+                required
+            >
+
+
+            <label>Email</label>
+            <input
+                type="email"
+                name="email"
+            >
+
+
+            <label>Age</label>
+            <input
+                type="number"
+                name="age"
+                min="1"
+                max="120"
+            >
+
+
+            <label>Education</label>
+            <input
+                type="text"
+                name="education"
+                placeholder="Example: 10th, 12th, Diploma, Degree"
+            >
+
+
+            <label>Skills</label>
+            <textarea
+                name="skills"
+                rows="4"
+                placeholder="Example: Farming, Computer, Tailoring"
+            ></textarea>
+
+
+            <label>Occupation</label>
+            <input
+                type="text"
+                name="occupation"
+                placeholder="Example: Farmer, Student, Worker"
+            >
+
+
+            <label>Income Category</label>
+            <select name="income_category">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option value="Low">
+                    Low
+                </option>
+
+                <option value="Middle">
+                    Middle
+                </option>
+
+                <option value="High">
+                    High
+                </option>
+
+            </select>
+
+
+            <label>Employment Status</label>
+            <select name="employment_status">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option value="Employed">
+                    Employed
+                </option>
+
+                <option value="Unemployed">
+                    Unemployed
+                </option>
+
+                <option value="Self-employed">
+                    Self-employed
+                </option>
+
+                <option value="Student">
+                    Student
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+                Update Profile
+            </button>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>
